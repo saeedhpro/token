@@ -1,24 +1,14 @@
-const { isConstructorDeclaration } = require("typescript");
-
 pragma solidity ^0.8.0;
 
-constract Tether {
+contract Tether {
     string public name = 'Tether';
     string public symbol = 'USDT';
     uint256 public totalSupply = 1000000000000000000;
     uint8 public decimals = 18;
 
-    event Transfer {
-        address indexed _from;
-        address indexed _to;
-        uint _value;
-    }
+    event Transfer (address indexed _from, address indexed _to, uint _value);
 
-    event Apporve {
-        address indexed _owner;
-        address indexed _spender;
-        uint _value;
-    }
+    event Apporve (address indexed _owner, address indexed _spender, uint _value);
 
     mapping(address => uint256) public balanceOf;
 

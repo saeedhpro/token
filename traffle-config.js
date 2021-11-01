@@ -1,12 +1,12 @@
 require("babel-register")
-require("bable-polyfill")
+require("babel-polyfill")
 
 module.exports = {
     netwoks: {
         development: {
-            host: "127.0.0.1:7545",
-            port: "7545",
-            netwok_id: "*",
+            host: "127.0.0.1:8545",
+            port: "8545",
+            netwok_id: "5777",
         },
     },
     contracts_directory: "./src/contracts/",
