@@ -1,8 +1,8 @@
 pragma solidity ^0.8.0;
 
-contract Tether {
-    string public name = 'Tether';
-    string public symbol = 'mUSDT';
+contract RWD {
+    string public name = 'RWD';
+    string public symbol = 'RWD';
     uint256 public totalSupply = 1000000000000000000;
     uint8 public decimals = 18;
 
